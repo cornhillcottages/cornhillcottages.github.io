@@ -106,8 +106,8 @@ td img:hover {
 .gallery-item img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  height: 160px;        /* controls visual size */
+  object-fit: cover;    /* keeps clean cropping */
   border-radius: 10px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -122,4 +122,20 @@ td img:hover {
   text-align: center;
   margin-top: 14px;
   font-size: 0.9rem;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 auto 1rem;
+  padding: 0;
+}
+
+.footer-icons img {
+  height: 70px;
+  width: auto;
+  display: block;
 }
