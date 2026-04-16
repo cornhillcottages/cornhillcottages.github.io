@@ -49,3 +49,31 @@ hr {
 h1 {
   font-size: 2rem;
 }
+
+/* ===== Gallery styling ===== */
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 15px;
+}
+
+td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Make images consistent and clean */
+td img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+td img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
